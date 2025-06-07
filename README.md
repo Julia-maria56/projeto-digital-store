@@ -36,7 +36,24 @@ PROJETO-DIGITAL-STORE/
     └── main.jsx
 ├── index.html
 
----
+```
+
+## 📑 Como Executar 
+
+### 1. Localmente
+###Clone o repositório e siga as instruções abaixo
+<h3>Ah, e certifique-se de possuir o Node.js está instalado em sua máquina</h3>
+
+```bash
+git clone https://github.com/AnaMenires/Projeto-Digital-Store.git
+cd Projeto-Digital-Store
+npm install
+npm run dev
+```
+
+### 2. Ou pelo link
+👉 Acesse a Digital Store aqui: projeto-digital-store-iwzs.vercel.app/
+
 
 
 
