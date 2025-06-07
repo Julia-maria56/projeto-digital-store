@@ -52,7 +52,7 @@ npm run dev
 ```
 
 ### 2. Ou pelo link
-👉 Acesse a Digital Store aqui: projeto-digital-store-iwzs.vercel.app/
+👉 Acesse a Digital Store aqui: <a href = "https://projeto-digital-store-iwzs.vercel.app/"> Digital store </a>
 
 
 
