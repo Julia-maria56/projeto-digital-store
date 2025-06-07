@@ -17,28 +17,26 @@
 - 🐘 **React Router DOM**
 - 🔐 **Vercel** (deploy)
 
-  ## 🧱 Arquitetura do Projeto
+
+## 🧱 Arquitetura do Projeto
 
 ```
 PROJETO-DIGITAL-STORE/
-│   ├── controllers/
-│   ├── models/
-│   ├── schemas/
-│   ├── middlewares/
-├── config/
-│   ├── database.js
-│   └── swagger.js
-├── database/
-│   ├── migrations/
-│   docs/
-│   ├── swaggerCompanions.js
-│   ├── swaggerPatients.js
-│   ├── swaggerUsers.js
-│   └── swaggerSessions.js
-├── app.js
-├── routes.js
-└── server.js
-```
+│
+└── 📁public
+└── 📁src
+    └── 📁assets
+    └── 📁components
+    └── 📁database
+    └── 📁pages
+    └── 📁routes
+    └── App.css
+    └── App.jsx
+    └── index.css
+    └── main.jsx
+├── index.html
 
 ---
+
+
 
