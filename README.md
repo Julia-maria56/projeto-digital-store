@@ -1,12 +1,44 @@
-# React + Vite
+# 🛍️Digital store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>O Digital store simula um e-commerce de sapatos, com o objetivo de demonstrar os conhecimentos obtidos na área de front-end na formação full-stack <a href=https://geracaotech.iel-ce.org.br/>Geração Tech</a></p>
 
-Currently, two official plugins are available:
+## 🚀Funcionalidades
+<ol>
+  <ul>🙃 Interface responsiva com React e CSS</ul>
+  <ul>🙃 Navegação entre páginas utilizando React Router Dom</ul>
+  <ul>🙃 Menu lateral para dispositivos mobile</ul>
+</ol>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- 🌚​ **CSS*
+- ⚡ **React**
+- 🚀 **Vite** 
+- 🐘 **React Router DOM**
+- 🔐 **Vercel** (deploy)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  ## 🧱 Arquitetura do Projeto
+
+```
+PROJETO-DIGITAL-STORE/
+│   ├── controllers/
+│   ├── models/
+│   ├── schemas/
+│   ├── middlewares/
+├── config/
+│   ├── database.js
+│   └── swagger.js
+├── database/
+│   ├── migrations/
+│   docs/
+│   ├── swaggerCompanions.js
+│   ├── swaggerPatients.js
+│   ├── swaggerUsers.js
+│   └── swaggerSessions.js
+├── app.js
+├── routes.js
+└── server.js
+```
+
+---
+
