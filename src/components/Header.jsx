@@ -2,16 +2,19 @@ import React, { useState, useRef, useEffect } from 'react';
 import Layout from './Layout';
 import Logo from './Logo';
 import MiniCart from "../assets/mini-cart.svg";
-import { NavLink, useLocation  } from "react-router-dom";
+import { NavLink, useLocation, useNavigate  } from "react-router-dom";
 import Paths from "../routes/Paths";
 import { PiListBold } from "react-icons/pi"; 
 import FilterGroup from '../components/FilterGroup'
+
 
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const sidebarRef = useRef(null);
   const location = useLocation();
+  const [searchQuery, setSearchQuery] = useState('');
+
 
   const isHome = location.pathname === '/';
 const isProductDetail = /^\/produtos\/[^/]+$/.test(location.pathname); // ex: /produtos/123
@@ -47,6 +50,22 @@ const isProductListing = location.pathname === '/produtos';
     };
   }, []);
 
+const navigate = useNavigate();
+
+const handleSearch = () => {
+  if (searchQuery.trim()) {
+    navigate(`/products?filter=${encodeURIComponent(searchQuery.trim())}`);
+    setIsSidebarOpen(false); // fecha sidebar em mobile se estiver aberta
+  }
+};
+const handleKeyDown = (e) => {
+  if (e.key === 'Enter') {
+    handleSearch();
+  }
+};
+
+
+
   return (
     <div className="header">
       <div className="header-content">
@@ -70,8 +89,15 @@ const isProductListing = location.pathname === '/produtos';
               type="text"
               placeholder="Pesquisar produto..."
               className="header-content__search"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyDown={handleKeyDown}
             />
-            <span className="pi pi-search"></span>
+            <span
+              className="pi pi-search"
+              role="button"
+              onClick={handleSearch}
+            />
           </div>
         </div>
 
@@ -84,8 +110,15 @@ const isProductListing = location.pathname === '/produtos';
         type="text"
         placeholder="Pesquisar produto..."
         className="header-content__search"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        onKeyDown={handleKeyDown}
       />
-      <span className="pi pi-search"></span>
+      <span
+        className="pi pi-search"
+        role="button"
+        onClick={handleSearch}
+      />
     </div>
 
     <div className="header-content__redirection">
