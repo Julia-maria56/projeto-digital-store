@@ -45,7 +45,7 @@ PROJETO-DIGITAL-STORE/
 <h3>Ah, e certifique-se de possuir o Node.js está instalado em sua máquina</h3>
 
 ```bash
-git clone https://github.com/AnaMenires/Projeto-Digital-Store.git
+git clone https://github.com/Julia-maria56/projeto-digital-store.git
 cd Projeto-Digital-Store
 npm install
 npm run dev
